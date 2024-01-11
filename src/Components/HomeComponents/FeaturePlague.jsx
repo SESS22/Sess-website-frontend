@@ -9,7 +9,7 @@ const FeaturePlaque = ({plaqueData}) =>{
             <article>
                 {plaqueData.article}
             </article>
-
+            
             <button onClick={() => window.open(`${plaqueData.link}`)}> Read More</button>
         </div>
     )

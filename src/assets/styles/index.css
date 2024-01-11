@@ -323,7 +323,7 @@ footer{
         transition: 0.2s;
         overflow: hidden;
     }
-    .header-dropMenu.active{
+    .header-dropMenu .active{
         height: 450px;
     }
 
@@ -335,7 +335,7 @@ footer{
       opacity: 0;
       text-align: center;
     }
-    .header-dropMenu.active ul{
+    .header-dropMenu .active ul{
         opacity: 1;
     }
 

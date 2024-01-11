@@ -336,7 +336,7 @@
 }
 
 .eventTitle{
-    height: 4.5rem;
+    height: max-content;
     width: 18rem;
     
     background-color: black;

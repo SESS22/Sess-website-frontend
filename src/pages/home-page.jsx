@@ -1,4 +1,4 @@
-import React, {useState, useEffect} from 'react';
+import React from 'react';
 import '../assets/styles/home-page-styles.css'
 
 // ICONS
@@ -7,9 +7,6 @@ import circleIcon from '../assets/images/circles.svg'
 import hatIcon from '../assets/images/hardhat.svg'
 import sunIcon from '../assets/images/icons8-sun.svg'
 
-// DATA
-
-import api from "../data/api.js"
 
 // COMPONENETS
 import ImageSlider from '../Components/HomeComponents/ImageSlider';
@@ -70,13 +67,22 @@ const HomePage = () => {
                     Our club also offers mentorship programs, career guidance, and industry partnerships, ensuring a well-rounded engineering education. 
                     Come join us as we embark on an exciting journey of learning, innovation, and professional growth!
                     </article>
+                   
+                    <span id='THE CLUE YOU seek' style={{display: "none"}}>
+                        "From international flavors to salads light, Grilled delights and pastas, oh so right,
+                        In this haven where pizzas sizzle,
+                        Seek out the clue, let not time fizzle.
+                        Where sunlight streams through panes so clear A radiant spot no shadow near
+                        Discover the next step hiding somewhere."
+                    </span>
+
                     <div></div>
 
                 </article>
 
                 <section className='featuredSection content-grid'>
                         <p>Events & Service</p>
-                        <div className='featureDiv-container'> 
+                        <div className='featureDiv-container' style={{display: "none"}}> 
                             {
                                 plaque_data.map((item, idx)=>(
                                     <FeaturePlaque plaqueData={item} key={idx} />

@@ -17,21 +17,21 @@ function UpcomingEventContainer({
     <div>
       <div className="content-container">
         <div className="picture">
-          <img src={placeholderImage} alt="" />
+          <img src={placeholderImage} alt={placeholderImage} />
         </div>
         <div className="content">
           <h1>{title}</h1>
           <div className="content-div">
             <div className="time-div">
-              <img src={calendarIcon} />
+              <img src={calendarIcon} alt={calendarIcon} />
               <p>{date}</p>
             </div>
             <div className="time-div">
-              <img src={timeIcon} />
+              <img src={timeIcon} alt={timeIcon}/>
               <p>{time}</p>
             </div>
             <div className="time-div">
-              <img src={locationIcon} />
+              <img src={locationIcon} alt={locationIcon} />
               <p>{location}</p>
             </div>
           </div>

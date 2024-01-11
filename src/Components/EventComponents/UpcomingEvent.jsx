@@ -1,10 +1,4 @@
 import React, { useState } from "react";
-
-import image18 from "../../assets/images/EventImages/image 18.png"
-import image21 from "../../assets/images/EventImages/image 21.png"
-import image22 from "../../assets/images/EventImages/image 22.png"
-
-import { nanoid } from "nanoid";
 import Wrapper from "../../assets/styles/EventWrappers/UpcomingEvents";
 
 import UpcomingEventContainer from "./UpcomingEventContainer";

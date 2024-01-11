@@ -6,15 +6,16 @@ import locationIcon from '../../assets/images/location.svg'
 import api from "../../data/api.js"
 
 const EventCard = () =>{
-    //Object: event = {title:"", desc:"", date:"", time:"", location:"", link:""}
+  
     const [upcomingEventData, setUpcomingEventData] = useState({});
     useEffect(()=>{
         const fetchUpcomingEventData = async () => {
             try {
-                const response = await api.get("/home/upcomingEvent");
-                setUpcomingEventData(response.data[0])
+                const response = await api.get("/event/upcomingEvents");
+                setUpcomingEventData(response.data[0]);
             } catch (error) {
-                
+                console.log("Eventcard", error);
+                return
             }
         }
         fetchUpcomingEventData();
