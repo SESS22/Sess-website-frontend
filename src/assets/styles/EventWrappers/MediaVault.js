@@ -34,7 +34,7 @@ const Wrapper = styled.div`
 
   .vault-container {
     background-color: #ffffff;
-    height: 100%;
+    height: 700px;
     width: 100%;
     display: grid;
     grid-template-columns: 49% 49%;
@@ -84,11 +84,11 @@ const Wrapper = styled.div`
   @media only screen and (max-width: 1100px) {
     .vault-container {
       background-color: #ffffff;
-      width: 600px;
-      height: 100%;
+      width: auto;
+      height: 1500px;
       display: grid;
       grid-template-columns: 100%;
-      grid-template-rows: 22% 22% 22% 22%;
+      grid-template-rows: 25% 25% 25% 25%;
       gap: 20px;
       margin-top: 41px;
       margin-bottom: 139px;
@@ -116,11 +116,11 @@ const Wrapper = styled.div`
     }
   }
 
-  @media only screen and (max-width: 1100px) {
+  @media only screen and (max-width: 700px) {
     .vault-container {
       background-color: #ffffff;
-      width: 350px;
-      height: 100%;
+      width: auto;
+      height: 1250px;
       display: grid;
       grid-template-columns: 100%;
       grid-template-rows: 22% 22% 22% 22%;
@@ -138,6 +138,12 @@ const Wrapper = styled.div`
       left: 20%;
       width: 218px;
       height: 66px;
+    }
+  }
+  @media only screen and (max-width: 440px) {
+    .vault-container {
+      width: auto;
+      height: 950px;
     }
   }
 `;

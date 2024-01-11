@@ -16,7 +16,7 @@ const Wrapper = styled.div`
   }
 
   .show-gallery {
-    z-index: 10;
+    z-index: 100;
     visibility: visible;
     opacity: 1;
     transition-property: opacity;
