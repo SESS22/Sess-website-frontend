@@ -1,9 +1,11 @@
 :root{
     --event_image: url('https://media.wired.com/photos/5aac56eb491c2d69af42197d/master/w_2560%2Cc_limit/Hackathons-RTS12CJ0.jpg');
-    --main-slide-img: url(https://img.freepik.com/free-vector/team-programmers-working-program-code-with-laptops-teamwork-male-female-professional-testers-coders-flat-vector-illustration-software-development-programming-lesson-concept_74855-22051.jpg?w=2000&t=st=1691992192~exp=1691992792~hmac=4f4c85a6d1dc05bddad86edbc045e63e058a5112fb7836bbe34e36f215c0b06d);
+    --main-slide-img: url(https://firebasestorage.googleapis.com/v0/b/sess-website.appspot.com/o/images%2FPlaceholderImages%2FannouncementBannerImage.jpg?alt=media&token=709f52e9-f957-4715-8276-4f668edb6ceb);
     --announc-slide-img: url(https://images.unsplash.com/photo-1498050108023-c5249f4df085?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2944&q=80);
     --sess-red-color: #FF1616;
 }
+
+
 
 .home-body{
     position: relative;
