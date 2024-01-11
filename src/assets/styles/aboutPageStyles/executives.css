@@ -1,0 +1,199 @@
+.executive-container{
+    margin-top:2rem;
+    margin-left:9rem;
+    height: 112rem;
+    display: flex;
+}
+
+.menu{
+    width:10rem;
+    height:10rem;
+    color:#9E9898;
+
+
+}
+.menu h3{
+    font-size:1rem;
+    font-weight:300;
+    padding:0.5rem 0;
+}
+.menu hr{
+    width: 40%;
+    margin-bottom: 0.6rem;
+}
+
+.menu-items{
+    padding:0rem 
+}
+.menu-items li{
+    padding:0.5rem 0;
+}
+.menu-items a{
+    transition:color 0.3s ease ;
+    &:visited{
+        color:#9E9898;
+    }
+    &:hover,&:active{
+        color:#FF1616;
+    }
+}
+.executive-members{
+    width: 60rem; 
+    margin-left:2rem;   
+}
+.executive-members p,.executive-members h3{
+    font-weight: 300;
+}
+
+.executive-members h3{
+    font-size: 1.5rem;
+    margin-bottom: 0.3rem;
+    color: #FF1616;
+}
+.executive-information-container{
+    display: flex;
+    width: 60rem;
+    margin:3.2rem 0;
+    padding:1.7rem;
+    border:1px transparent;
+    border-radius: 5px;
+    box-shadow: 0px 1px 1px 2px rgba(0, 0, 0, 0.05);
+}
+.executive-information{
+    width:40rem;
+}
+.executive-information p, .executive-information h2,.executive-information h4{
+    margin-bottom:0.8rem;
+}
+.executive-information h2{
+    font-size: 1.05rem;
+    font-weight: 600;
+    color:#FF1616;
+}
+.executive-information p{
+    width:37.5rem;
+}
+.executive-information h4{
+    font-size:1rem;
+    font-weight: 600;
+}
+.executive-information ul{
+    padding-left:30px;
+}
+.executive-information ul li{
+    list-style: disc;
+}
+.executive-photo-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width:20rem;
+
+}
+.email-icon{
+    background: url("../../images/email-icon.svg") no-repeat center/contain;
+    width: 2rem;
+    height: 2rem;
+    margin-top: 0.7rem;
+}
+.dayson-photo{
+    background: url("../../images/Dayson.svg") no-repeat center/contain;
+    width: 10rem;
+    height: 10rem;
+}
+.kannav-photo{
+    background: url("../../images/Kannav.svg") no-repeat center/contain;
+    width: 10rem;
+    height: 10rem;
+}
+.dennis-photo{
+    background: url("../../images/Dennis.svg") no-repeat center/contain;
+    width: 10rem;
+    height: 10rem;
+}
+.arian-photo{
+    background: url("../../images/Arian.svg") no-repeat center/contain;
+    width: 10rem;
+    height: 10rem;
+}
+.george-photo{
+    background: url("../../images/George.svg") no-repeat center/contain;
+    width: 10rem;
+    height: 10rem;
+}
+
+#scrollButton{
+    position:fixed;
+    bottom:1.2rem;
+    right:1.8rem;
+    width: 3.5rem;
+    height: 3.5rem;
+    z-index:99;
+    padding:0.2rem;
+    border-radius: 50%;
+    border:5px transparent solid;
+    background-color: #FF1616;
+    color:white;
+}
+
+@media  only screen and (max-width:1300px) {
+    .executive-container{
+        width:50rem;
+        margin-left: 4rem;
+    }
+    .executive-members{
+        width: 50rem;
+    }
+    .executive-information-container{
+        width:50rem;
+    }
+    .menu-items li{
+        font-size: 0.9rem;
+
+    }
+
+@media  only screen and (max-width:1000px){
+    .executive-container,.executive-members,.executive-information-container{
+        width:40rem;
+    }
+    .executive-information{
+        font-size: 0.7rem;
+        width: 27.5rem;
+    }
+    .executive-information p{
+        width:22rem;
+    }
+
+}
+@media only screen and  (max-width:850px){
+    .executive-container{
+        margin-left: 3rem;
+    }
+    .executive-information-container{
+        width:30rem;
+    }
+    .executive-information{
+        width: 18rem;
+        height: 14.6rem;
+    }
+    .executive-members{
+        font-size:0.7rem;
+    }
+    .executive-information p{
+        width: 15rem;
+    }
+    .executive-information ul{
+        padding-left: 0.8rem;
+    }
+    .executive-photo-container{
+        width:10rem;
+    }
+}
+
+
+    
+}
+@media only screen and (max-width:700){
+
+}

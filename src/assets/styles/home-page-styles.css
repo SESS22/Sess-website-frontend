@@ -1,0 +1,411 @@
+:root{
+    --event_image: url('https://media.wired.com/photos/5aac56eb491c2d69af42197d/master/w_2560%2Cc_limit/Hackathons-RTS12CJ0.jpg');
+    --main-slide-img: url(https://img.freepik.com/free-vector/team-programmers-working-program-code-with-laptops-teamwork-male-female-professional-testers-coders-flat-vector-illustration-software-development-programming-lesson-concept_74855-22051.jpg?w=2000&t=st=1691992192~exp=1691992792~hmac=4f4c85a6d1dc05bddad86edbc045e63e058a5112fb7836bbe34e36f215c0b06d);
+    --announc-slide-img: url(https://images.unsplash.com/photo-1498050108023-c5249f4df085?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2944&q=80);
+    --sess-red-color: #FF1616;
+}
+
+.home-body{
+    position: relative;
+}
+
+/* General Styles */
+.btn-style{
+    height: 2.95rem;
+    width: 8.5rem;
+    color: var(--sess-red-color);
+    background: none;
+    border: 1px solid var(--sess-red-color);
+    border-radius: 5px;
+    font-size: 1.25rem;
+    margin-top: 18px;
+    transition: 0.2s ease-out;
+}
+    .btn-style:hover{
+        color: white;
+        background: var(--sess-red-color);
+        border: none;
+    }
+
+.nav-div-container{
+    width: 26.5rem;
+    height: 3.5rem;
+    position: absolute;
+    bottom: 3rem;
+    background: rgba(255, 255, 255, 0.5);
+    border-radius: 5px;
+    box-shadow: 0 15px 20px rgba(0,0,0,.2);
+}
+    #nav-div{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: space-between;
+        
+    }
+        #nav-div .nav-div-option{
+            flex-grow: 1;
+            font-family: 'Outfit', sans-serif;
+            font-size: 1.5rem;
+            font-weight: 300;
+            display: grid;
+            place-items: center;
+            
+            transition: 0.3s;
+        }
+        #nav-div .nav-div-option:hover{
+            border-top: 2px solid #FF1616;
+        }
+        #nav-div .nav-div-option p {
+            color: var(--sess-red-color);
+        }
+
+
+
+.homePage-banner, .announcement-banner{
+    height: 36.5rem;
+    
+    background-image: var(--main-slide-img);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 3rem 0 3rem 0;
+}
+
+    .homePage-banner div{
+        height: 3.5rem;
+    }
+        .homePage-banner .homePage-banner-container{
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+        .homePage-banner #titleBar{
+            background-color: #FF1616;
+            width: 32.5rem;
+            padding: 10px;
+        }
+        .homePage-banner #titleBar p{
+            font-size: 2.25rem;
+            font-family: 'Archivo', sans-serif;
+            font-weight: 700;
+            color: white;
+            display: grid;
+            place-items: center;
+        }
+
+.announcement-banner{
+    background-image: var(--announc-slide-img); 
+    left: 0;
+}
+    .slider-content{
+        color: white;
+        background-color: rgb(0, 0, 0, 0.3);
+        padding: 10px;
+        border-radius: 5px;
+    }
+    .slider-content h2{
+        font-family: 'Archivo', sans-serif;
+        font-size: 2rem;
+        font-weight: 900;
+        text-transform: uppercase;
+    }
+    .slider-content p{
+        font-weight: 200;
+        line-height: 25px;
+    }
+    .slider-content-btn-inactive{
+        display: none;
+    }
+      
+.home-body-content{
+    padding: 5rem 0rem 5rem 0rem;
+}
+    .intro-article{
+        font-family: 'Outfit', sans-serif;
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 8.25rem;
+    }
+        .intro-article p {
+            color: var(--sess-red-color);
+            font-size: 3rem;
+            font-weight: 600;
+            margin-bottom: 1rem;
+        }
+        .intro-article article{
+            font-size: 1.5rem;
+            font-weight: 200;
+            margin-bottom: 3rem;
+        }
+        .intro-article div{
+            width: 60%;
+            outline: 1px solid var(--sess-red-color);
+            align-self: center;
+        }
+
+.featuredSection{
+    height: 42.5rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+   padding: 15px 0px 15px 0px;
+}
+    .featuredSection > p{
+        font-family: 'Archivo', sans-serif;
+        font-weight: 800;
+        font-size: 2.25rem;
+        margin-bottom: 4.2rem;
+        color: var(--sess-red-color);
+    }
+    .featureDiv-container{
+        
+        display: flex;
+        justify-content: space-between;
+    }
+    .featureDiv{
+        width: 18.5rem;
+        height: 28.5rem;
+        border-radius: 10px;
+        padding: 10px;
+        box-shadow: -1px -1px 4px 3px rgb(34, 34, 34, 0.07);
+        padding: 4.5rem 1.4rem 4.5rem 1.4rem;
+        
+        
+    }
+        .featureDiv img{
+            height: 4.7rem;
+            width: 4.7rem;
+            object-fit: cover;
+            filter: hue-rotate(0deg);
+            margin-bottom: 14px;
+        }
+        .featureDiv p{
+        text-transform: uppercase;
+        font-size: 1.5rem;
+        font-weight: 500;
+        color: #FF1616;
+        margin-bottom: 14px;
+        }
+        .featureDiv article{
+            font-size: 1.05rem;
+            font-weight: 200;
+            height: 10.5rem;
+        }
+        .featureDiv button{
+            width: 13rem;
+            height: 1.95rem;
+            font-size: 1.06rem;
+            border: 0;
+            border-radius: 5px;
+            color: white;
+            background: var(--sess-red-color);
+            transition: 0.2s;
+        }
+            .featureDiv button:hover{
+                color: var(--sess-red-color);
+                border: 1px groove var(--sess-red-color);
+                background: none;
+                
+            }
+
+.pageSection{
+    height: 42.5rem;
+    background: rgb(0, 0, 0, 0.03);
+    padding: 4.2rem 0 6.2rem 0;
+}
+    .pageSection:nth-child(even){
+        background: none;
+    }
+    .pageSection .title-underline p{
+        text-transform: capitalize;
+        font-family: 'Archivo', sans-serif;
+        font-size: 1.88rem;
+        color: var(--sess-red-color);
+        font-weight: 500;
+        margin-bottom: 15px;
+    }
+    .title-underline{
+        width: max-content;
+        margin-bottom: 3rem;
+    }
+    .title-underline div{
+        width: 40%;
+        outline: 1px solid var(--sess-red-color);
+    }
+
+.eventSection{
+    display: flex;
+}
+
+    .eventSection .image-container{
+        height: 21rem;
+        width: 35rem;
+        background-color: var(--sess-red-color);
+        border-radius: 10px;
+        overflow: hidden;
+    }
+    .image-container img{
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+    }
+    .infoCard{
+    height: 27rem;
+    width: 32.5rem;
+    border-radius: 10px;
+    margin-left: 10px;
+    padding: 37px 35px;
+    background-color: white;
+    
+    }
+        .infoCard #infoCard-event-title{
+            font-size: 2rem;
+            font-weight: 600;
+            color:var(--sess-red-color);
+            text-transform: uppercase;
+            margin-bottom: 1.125rem;
+        }
+        .infoCard p{
+            font-size: 1.25rem;
+            font-weight: 300;
+            margin-bottom: 1.75rem;
+            
+        }
+        #infoCard-article{
+            --max-lines: 5;
+            --line-height: 1.4;
+            max-height:calc(var(--max-lines) * 1.25rem * var(--line-height));
+            line-height: var(--line-height);
+            text-overflow: ellipsis;
+            overflow: hidden;
+            position: relative;
+        }
+        #infoCard-article::before{
+            content: "";
+            position: absolute;
+            height: calc(1rem * var(--line-height));
+            width: 100%;
+            bottom: 0;
+            pointer-events: none;
+            background: linear-gradient(to bottom, transparent, white);
+        }
+      
+       
+        .infoCard button{
+            margin-top: 2.188rem;
+        }
+        
+
+    .time-date-container{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+       
+        }
+            .time-date-div{
+                display: flex;  
+                max-width: 150px;
+                
+            }
+                .time-date-div img{
+                    height: 1.38rem;
+                    width: 1.38rem;
+                    margin-right: 10px;
+                    fill: #9E9898;
+                    
+                }
+                .time-date-div p{
+                    font-family: 'Archivo', sans-serif;
+                    font-size: 0.88rem;
+                    font-weight: 400;
+                    color: #9E9898;
+                    padding: 4px 0px 0px 0px;
+                }
+
+
+.image-slide-container{
+    height: 32.5rem;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;   
+    
+}
+
+.eventTitle{
+    height: 4.5rem;
+    width: 18rem;
+    
+    background-color: black;
+    position: absolute;
+    right: 1rem;
+    bottom: -0.5rem;
+    padding: 10px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+    .eventTitle p{
+        font-family: 'Archivo', sans-serif;
+        font-size: 1.5rem;
+        font-weight: 600;
+        font-style: bold;
+        color: white;
+        text-transform: uppercase;
+        
+    }
+        .eventTitle:hover{
+            transform: translateY(-10px);
+            background-color: rgba(0,0,0,.2);
+        }
+
+.image-slide{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+    
+}
+
+.image-slide-hidden{
+    display: none;
+}
+    .arrow{
+        position: absolute;
+        width: 2rem;
+        height: 2rem;
+        color: white;
+        filter: drop-shadow(0px 0px 3px #55555589);
+        opacity: 70%;
+    }
+        .arrow:hover{
+            cursor: pointer;
+        }
+        .arrow-left{
+            left: 1rem
+        }
+        .arrow-right{
+            right: 1rem
+        }
+    .slide-indicator{
+        display: flex;
+        position: absolute;
+        bottom: 10px;
+        opacity: 85%;
+    }
+        .indicator{
+            background-color: red;
+            height: 0.7rem;
+            width: 0.5rem;
+            border-radius: 100%;
+            border: none;
+            outline: none;
+            box-shadow: 0px 0px 5px #555;
+            margin: 0 0.2rem;
+            cursor: pointer;
+        }
+        .indicator-inactive{
+            background-color: white;
+        }

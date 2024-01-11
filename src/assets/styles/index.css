@@ -1,0 +1,396 @@
+/* CSS File for Header and Footer */
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Archivo:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+/* 
+    font-family: 'Archivo', sans-serif;
+    font-family: 'Outfit', sans-serif;
+
+    font weight:
+    Thin 100
+    ExtraLight 200
+    Light 300
+    Regular 400
+    Medium 500
+    SemiBold 600
+    Bold 700
+    ExtraBold 800
+    Black 900
+*/
+
+/* D: This creates the grid */
+.content-grid{
+    margin: 0 15vw 0 15vw;
+    transition: 0.2s;
+}
+
+@media only screen and (max-width: 1550px){
+    .content-grid{
+        margin: 0 5vw 0 5vw;
+    }
+}
+
+@media only screen and (max-width: 1100px){
+    .content-grid{
+        margin: 0 ;
+    }
+}
+
+@media only screen and (max-width: 700px){
+    .content-grid{
+        margin: 0;
+    }
+}
+
+/* 
+    font-family: 'Archivo', sans-serif;
+    font-family: 'Outfit', sans-serif;
+
+    font weight:
+    Thin 100
+    ExtraLight 200
+    Light 300
+    Regular 400
+    Medium 500
+    SemiBold 600
+    Bold 700
+    ExtraBold 800
+    Black 900
+*/
+
+*{
+    margin: 0px ;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+    font-family: 'Outfit', sans-serif;
+    
+}
+body{
+  min-height: 100vh;
+}
+
+.header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 10px 60px 10px 10px;
+}
+.header #sess-logo{
+    float: left;
+    max-width: 150px;
+    max-height: 100px;
+    object-fit: contain;
+}
+.header #sess-logo:hover{
+  cursor: pointer;
+}
+
+.menuSelector{
+    display: none;
+}
+
+.header-dropMenu{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.header-dropMenu ul{
+    display: flex;
+}
+
+.link{
+    display: block;
+    padding:20px;
+    margin: 0px 1.3rem 0px 0px;
+    font-family: 'Outfit', sans-serif;
+    color: black;
+    font-size: 1.25rem;
+    border-radius: 5px;
+    transition: 0.2s;
+}
+.link:hover{
+    color: #FF1616;
+}
+.link::after{
+    content: '';
+    height: 2px;
+    width: 100%;
+    background:#FF1616;
+    display: block;
+    transform-origin: left;
+    transform: scaleX(0);
+    transition: transform 0.3s ease-in;
+    pointer-events: none
+}
+.link:hover::after{
+    transform: scaleX(1);
+}
+.link.currentPage{ /* D: the current page is indicated by a red colored text */
+    color: #FF1616;
+}
+
+footer{
+    background: #FF1616;
+    width: 100%;
+    position: relative;
+    bottom: 0;
+}
+.footer-section{
+    font-family: 'Archivo', sans-serif;
+    padding: 2.44rem 0px 0rem 0px; 
+}
+
+.sess-footer-logo{
+    background: white;
+    width: 18%;
+    height: 70px;
+    float: left;
+    text-align: center;
+    display: flex;
+    justify-content: right; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    padding-right: 10px;
+    border-radius: 2px;
+    box-shadow: 3px 3px 2px 1px rgb(0, 0, 0, 0.2);
+    transition: 0.2s;
+}
+.sess-footer-logo img{
+    width: 60%;
+    object-fit: contain;
+}
+
+.footer-links{
+    display: flex;
+    justify-content: space-evenly;
+    color: white;
+    align-self: flex-start;
+}
+.footer-links p{
+    font-weight: 800;
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+}
+.footer-links li {
+    margin-bottom: 5px;
+}
+.footer-links li a{
+    font-family: 'outfit', sans-serif;
+    font-weight: 400;
+    font-size: 0.9rem;
+    color: white;
+    text-decoration: none;
+    transition: 0.2s;
+}
+.footer-links li a:hover{
+    color: black;
+}
+
+.end-footer{
+    border-top: 1px solid rgb(225, 225, 225, 0.8);
+    border-block-width: 70%;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 5rem;
+    padding: 25px 5px 25px 5px;
+    color: white;
+    text-align: center;
+}
+
+.logo-wrapper{
+    display:flex;
+    width:max-content;
+    justify-content:space-between ;
+    margin-bottom: 0.75rem;
+    border-radius: 5px;
+    outline: 1px solid white;
+    padding: 5px;
+}
+.logo{
+  width: 2.5rem;
+  height: 2.5rem;
+  margin-right: 0.5rem;
+  margin-left: 0.5rem;
+  transition: 0.15s ease-in;
+  
+}
+    .logo:hover{
+        transform: scale(1.2) translateY(-11px);
+    }
+    .logo:hover + .logo{
+        transform: scale(1) translateY(-2px);
+    }
+    .logo:has(+ .logo:hover){
+        transform: scale(1) translateY(-2px);
+    }
+
+.bannerClass{
+  background:linear-gradient(rgba(255, 0, 0, 0.25), rgba(255, 0, 0, 0.25)),no-repeat center/cover url("../images/bannerImage1.jpeg") ;
+  width: 100%;
+  height:19rem
+}
+.eventClass{
+  background:linear-gradient(rgba(255, 0, 0, 0.25), rgba(255, 0, 0, 0.25)),no-repeat top/cover url("../images/bannerImage2.jpeg") ;
+  width: 100%;
+  height:19rem
+}
+.bannerContainer{
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin:0 3rem;
+  height: 100%;
+}
+.bannerHeading{
+  font-size: 3rem;
+  font-weight: bold;
+  color: white;
+  text-align: center;
+  height:4rem;
+  padding:0 2rem;
+  background-color:red;
+  margin-bottom: 1rem;
+  width: 60%;
+}
+.bannerContent{
+  font-size:1.5rem;
+  font-weight:600;
+  word-spacing: 0.2rem;
+  color:white;
+  width:60%
+}
+
+ 
+/* NOTE Media Queries */
+@media only screen and (max-width: 1550px){
+    .header{
+        padding: 10px 0px 10px 10px;
+    }
+
+    .sess-footer-logo{
+        height: 60px;
+    }
+  
+}
+
+/* media 1100 */
+@media only screen and (max-width: 1100px){
+    .header{
+        padding: 10px 0px 10px 10px;
+    }
+
+    .sess-footer-logo{
+        height: 50px;
+    }
+
+}
+
+/* media 800 */
+@media only screen and (max-width: 700px){
+    .header{
+        padding: 10px 0px 10px 10px;
+    }
+    .menuSelector{
+        display: block;
+        cursor: pointer;
+    }
+    .menuSelector .line{
+        width: 30px;
+        height: 3px;
+        background: #FF1616;
+        margin: 6px 0;
+        transition: 0.5s;
+    }
+
+    .header{
+        padding: 10px 15px 10px 10px;
+        position: relative;
+    }
+
+    .header-dropMenu{
+        top: 100%;
+        height: 0;
+        position: absolute;
+        left: 0;
+        width: 100vw;
+        margin: 0;
+        background: #FF1616;
+        transition: 0.2s;
+        overflow: hidden;
+    }
+    .header-dropMenu.active{
+        height: 450px;
+    }
+
+    .header-dropMenu ul{
+      display: block;
+      width: fit-content;
+      margin: 40px auto 0 auto;  
+      transition: 0.5s;
+      opacity: 0;
+      text-align: center;
+    }
+    .header-dropMenu.active ul{
+        opacity: 1;
+    }
+
+    .link{ /* .link = .header-dropMenu ul li a */
+        margin-bottom: 12px;
+        color: white;
+        
+    }
+    .link:after{
+        background:white;
+        
+    }
+    .link:hover{
+        color: white;
+
+    }
+    .link.currentPage{
+        background: white;
+        pointer-events: none;
+    }
+
+    /* Footer */
+    .footer-section{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .sess-footer-logo{
+        width: 200px;
+        height: 40px;
+    }
+    
+    .footer-links{
+        flex-direction: column;
+        flex-wrap: wrap;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        margin-top: 20px;
+        align-self: center;
+    }
+
+
+    .head-text{
+        margin-bottom: 15px;
+    }
+
+    .aside-links {
+        margin-left: 40px;
+    }
+}
+
+@media only screen and (max-width: 300px){
+    .footer-links{ 
+        grid-template-columns: repeat(1, 1fr);
+        
+    }
+
+}
